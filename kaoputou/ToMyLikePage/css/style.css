@@ -1,0 +1,661 @@
+a:hover{
+    text-decoration: none;
+}
+/*导航部分*/
+#sidebarcontaine{
+    display: none;
+    width:800px;
+    height:700px;
+    position:absolute;
+    top:0px;left:0px;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5);
+}
+#sidebar{
+    width:300px;
+    height: 700px;
+    background-color: white;
+    position: relative;
+}
+#sidebar .btn{
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+#sidebar .btn a{
+    padding: 23px 55px;
+    background-color: red;
+    font-size: 20px;
+    color:white;
+}
+#sidebar .right{
+    margin-left: -4px;
+
+    border-left: 1px solid black;
+}
+#sidebar ul{
+    position:absolute;
+    top:100px;
+    left:30px;
+}
+#sidebar li{
+    display: block;
+    margin-top:20px;
+}
+#sidebar li a{
+    color:#5e5e5e;
+    font-size: 20px;
+}
+#sidebar li .red{
+    color:red;
+}
+/*导航公共部分*/
+nav{
+    overflow: auto;
+}
+#leftbtn{
+    display: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+nav .link-nav a{
+    font-size:14px;
+    text-align: center;
+    color:#555;
+    padding:25px 15px;
+    width: 96px;
+}
+
+nav .link-nav .selected{
+    color:red;
+}
+
+nav .link-nav a:hover{
+    background-color: #eee;
+}
+
+nav .search{
+    width:240px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #eee;
+}
+
+nav .search input{
+    background: url(../img/search.png) no-repeat 170px 0px;
+    background-color: #eee;
+    height: 30px;
+    width: 200px;
+    margin-top: 5px;
+    margin-left:20px;
+    border:none;
+    color:#555;
+}
+
+#first-passway{
+    width:150px;
+    height: 40px;
+    border-radius: 40px;
+    border:1px solid red;
+    color:#FD5D5D;
+    line-height: 40px;
+    text-align: center;
+
+}
+nav .action-nav li{
+    width: 70px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+nav .action-nav a{
+    color:#555;
+}
+
+nav .action-nav .btn-join{
+    background-color:#FD5D5D;
+}
+nav .action-nav .btn-join a{
+    color:#fff;
+}
+/*响应式部分*/
+@media (max-width: 690px){
+    #leftbtn{
+        display: block;
+        position: absolute;
+        top:15px;left:20px;
+    }
+    nav .logo{
+        width: 160px;
+        margin:20px auto;
+    }
+    nav .link-nav{
+        display: none;
+    }
+    nav .search{
+        display: none;
+    }
+    #first-passway{
+        display: none;
+    }
+    nav .action-nav{
+        display: none;
+    }
+}
+
+@media (min-width: 690px) and (max-width: 830px){
+    nav .logo{
+        float:left;
+        margin:20px;
+    }
+    nav .link-nav{
+        float: left;
+        margin-top: 22px;
+    }
+    nav .search{
+        position: absolute;
+        top:70px;right:400px;
+    }
+
+    #first-passway{
+        float: right;
+        margin-right: 20px;
+        margin-top:28px;
+    }
+    nav .action-nav{
+        float: right;
+        margin-right: 20px;
+        margin-top: 70px;;
+    }
+}
+
+@media (min-width: 830px) and (max-width: 950px){
+    nav .logo{
+        float:left;
+        margin:20px;
+    }
+    nav .link-nav{
+        float: left;
+        margin-top: 22px;
+    }
+    nav .search{
+        float:left;
+        margin-left: 20px;
+        margin-top:15px;
+    }
+
+    #first-passway{
+        float: right;
+        margin-right: 20px;
+        margin-top:15px;
+    }
+    nav .action-nav{
+        float: right;
+        margin-right: 20px;
+        margin-top: 15px;;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 980px){
+    nav .logo{
+        float:left;
+        margin:20px;
+    }
+    nav .link-nav{
+        float: left;
+        margin-top: 22px;
+    }
+    nav .search{
+        float:left;
+        margin-left: 20px;
+        margin-top:15px;
+    }
+
+    #first-passway{
+        float: right;
+        margin-right: 20px;
+        margin-top:15px;
+    }
+    nav .action-nav{
+        float: right;
+        margin-right: 20px;
+        margin-top: 70px;;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1180px){
+    nav .logo{
+        float:left;
+        margin:20px;
+    }
+    nav .link-nav{
+        float: left;
+        margin-top: 22px;
+    }
+    nav .search{
+        float:left;
+        margin-left: 20px;
+        margin-top:15px;
+    }
+
+    #first-passway{
+        float: right;
+        margin-right: -130px;
+        margin-top:70px;
+    }
+    nav .action-nav{
+        float: right;
+        margin-right: 20px;
+        margin-top: 15px;;
+    }
+}
+@media (min-width: 1180px) {
+    nav .logo{
+        float:left;
+        margin:20px;
+    }
+    nav .link-nav{
+        float: left;
+        margin-top: 22px;
+    }
+    nav .search{
+        float:left;
+        margin-left: 20px;
+        margin-top:15px;
+    }
+
+    #first-passway{
+        float: right;
+        margin-right: 20px;
+        margin-top:15px;
+    }
+    nav .action-nav{
+        float: right;
+        margin-right: 20px;
+        margin-top: 15px;;
+    }
+
+}
+
+/*内容主题部分*/
+
+/*JS需要*/
+.adddiv{
+    width:130px;
+    height:25px;
+    font-size: 12px;
+    color:white;
+    background-color:#444444;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 25px;
+    position: fixed;
+}
+/*JS需要*/
+
+.contentcontainer{
+    background-color: #f5f5f5;
+}
+.centercontainer{
+    width:80%;
+    margin:0 auto;
+    border:1px solid #f5f5f5;
+}
+
+.centercontainer .menu{
+    background-color: white;
+    margin-top:40px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    overflow: auto;
+}
+.centercontainer .menu .menurow{
+    margin:30px 30px;
+    width: 100%;
+    overflow: auto;
+    position:relative;
+}
+.centercontainer .menu .menurow span{
+    font-size: 14px;
+    color:#bbb;
+    margin-right: 20px;
+    margin-top:5px;
+}
+.centercontainer .menu .menurow ul{
+    display: block;
+    width:70%;
+    margin-top:5px;
+}
+
+.centercontainer .menu .menurow li a{
+    color:#555;
+}
+.centercontainer .menu .menurow li a:hover{
+    color:red;
+}
+.centercontainer .menu .menurow li{
+    margin-right: 20px;
+}
+.centercontainer .menu .menurow .disabled{
+    color:#bbb;
+}
+.centercontainer .menu .menurow .disabled:hover{
+    color:#bbb;
+}
+.centercontainer .menu .menurow .active{
+    padding:5px 10px;
+    background-color:red;
+    color:white;
+    border-radius: 15px;
+    margin-right:20px;
+}
+.centercontainer .menu .menurow .active:hover{
+    color:white;
+}
+#btn-more{
+    position:absolute;
+    right:80px;bottom: 3px;
+    background-color: white;
+    color:red;
+    border:none;
+    width: 40px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .centercontainer{
+        width: 90%;
+        margin:0 auto;
+    }
+    .centercontainer .menu .menurow ul{
+        width: 350px;
+    }
+    .centercontainer .menu .menurow .active{
+        padding: 3px 8px;
+    }
+    #btn-more{
+        position:absolute;
+        left:200px;top:-2px;
+
+    }
+}
+@media (min-width: 768px) {
+    .centercontainer .menu .menurow > *{
+        float: left;
+    }
+}
+
+
+/*图片内容部分*/
+.showcontainer{
+    width: 100%;
+    margin-top: 40px;
+}
+.showcontainer:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.showcontainer .sectioncontainer{
+    width: 30%;
+    background-color:white;
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+    margin-right:30px;
+    margin-top:30px;
+}
+.showcontainer .sectioncontainer:hover img{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.showcontainer .sectioncontainer .imgcontainer{
+    width: 100%;
+    position: relative;
+}
+.showcontainer .sectioncontainer .imgcontainer img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.showcontainer .sectioncontainer .imgcontainer p{
+    width:80px;
+    height:34px;
+    background-color: #65C4D9;
+    position:absolute;
+    top:16px;right: 16px;
+    text-align: center;
+    color:white;
+    font-size: 14px;
+    line-height: 34px;
+    border-radius: 14px;
+}
+.showcontainer .sectioncontainer .txtcontainer{
+    width: 90%;
+    margin:0 auto;
+    font-size: 14px;
+    color:#555;
+    padding: 20px 0px;
+    overflow: auto;
+}
+.showcontainer .sectioncontainer .txtcontainer p strong{
+    font-size:18px;
+
+}
+.showcontainer .sectioncontainer .txtcontainer span{
+    font-size: 14px;
+    margin-right:40px;
+    padding-left:20px;
+    color:#9b9b9b;
+}
+.showcontainer .sectioncontainer .txtcontainer .red{
+    color:#E77F7F;
+}
+.showcontainer .sectioncontainer .txtcontainer .progress{
+    width: 100%;
+    height:10px;
+    background-color: #FD5D5D;
+    border-radius:10px;
+    margin-top:80px;
+    position:relative;
+    overflow: visible;
+}
+.showcontainer .sectioncontainer .txtcontainer .progress span{
+    position:absolute;
+    top:-20px;right: -35px;
+}
+.showcontainer .sectioncontainer .txtcontainer .left{
+    margin:0px;
+    padding: 0px;
+}
+.showcontainer .sectioncontainer .txtcontainer .right{
+    margin:0px;
+    padding: 0px;
+    float: right;
+}
+@media (max-width: 768px){
+    .showcontainer .sectioncontainer{
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+@media (min-width: 768px) {
+
+}
+
+/*底部按钮*/
+.btnbottom{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btnbottom li{
+    background-color: white;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.btnbottom li:hover > a{
+    color:red;
+}
+.btnbottom li a{
+    color:#555;
+}
+.btnbottom .btnshape{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+
+}
+.btnbottom .numbershape{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.btnbottom .active{
+    background-color: red;
+}
+.btnbottom .active a{
+    color:white;
+}
+
+/*footer部分*/
+footer{
+    background-color:#4a4a4a;
+    border:1px solid #4a4a4a;
+}
+footer .footercontainer{
+    width:1024px;
+    margin:60px auto 30px;
+    overflow: auto;
+}
+footer li{
+    display: block;
+}
+footer .list-link{
+    margin-right: 80px;
+    float:left;
+}
+footer .list-link li{
+    margin-top:10px;
+}
+footer .list-link h4{
+    color:#fff;
+    margin:0 0 24px;
+    font-size: 20px;
+    opacity: 0.6;
+}
+footer .list-link li a{
+    color: #ffffff;
+    opacity: 0.4;
+}
+
+footer .list-link-l{
+    margin-right: 80px;
+    float:left;
+}
+footer .list-link-l h4{
+    color:#fff;
+    margin:0 0 24px;
+    font-size: 20px;
+    opacity: 0.6;
+}
+footer .list-link-l p{
+    color: #ffffff;
+    opacity: 0.4;
+    font-size:26px;
+}
+footer .list-link-l p span{
+    display: block;
+    font-size:12px;
+    margin-top:10px;
+}
+footer .list-link-l a{
+    display: block;
+    color: #ffffff;
+    opacity: 0.4;
+    margin-top:50px;
+}
+
+footer .qrcodes{
+    width:270px;
+    height:150px;
+    float:right;
+}
+footer .qrcodes span{
+    display: block;
+    margin-top:20px;
+    color:#fff;
+    opacity: 0.4;
+}
+footer .qrcodes .app{
+    float: left;
+}
+footer .qrcodes .gzh{
+    float: right;
+}
+footer .footerbottom{
+    width:1024px;
+    margin:0 auto;
+    border-top:1px solid #0f0f0f;
+    position: relative;
+}
+footer .footerbottom ul{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+footer .footerbottom li{
+    display: inline-block;
+    color:#fff;
+    opacity: 0.4;
+    margin-right: 20px;
+    font-size: 12px;
+}
+footer .footerbottom li a{
+    color:#fff;
+}
+footer .footerbottom p{
+    color:#fff;
+    opacity: 0.4;
+    font-size: 12px;
+    position: absolute;
+    top:10px;right:0px;
+}
+footer .firsthidened{
+    display: none;
+}
+@media (max-width: 768px) {
+    footer .footerbottom{
+        width:600px;
+        margin:0 auto;
+        border-top:1px solid #0f0f0f;
+        position: relative;
+    }
+    .footercontainer{
+        display: none;
+    }
+    .footerbottom .link{
+        display: none;
+    }
+    .footerbottom .firsthidened{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .footerbottom p{
+        margin-top:30px;
+        position: absolute;
+        top:10px;left:0px;
+    }
+}

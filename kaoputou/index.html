@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+
+    <script src="bin/jquery/jQuery2.1.4.js"></script>
+    <link rel="stylesheet" href="bin/bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="HomePage/css/style.css">
+</head>
+<body>
+<div id="sidebarcontaine">
+    <div id="sidebar">
+        <div class="btn">
+            <a href="#">登陆</a>
+            <a href="#" class="right">注册</a>
+        </div>
+        <ul>
+            <li><a href="#" class="red">首页</a></li>
+            <li><a href="#">投我喜欢</a></li>
+            <li><a href="#">新手指南</a></li>
+        </ul>
+    </div>
+</div>
+<!--导航部分-->
+<nav>
+
+    <div id="leftbtn">
+        <a href="#"><img src="HomePage/img/leftbtn.png" alt=""></a>
+    </div>
+    <div class="logo">
+        <a href="index.html"><img src="HomePage/img/logo-new.png" alt=""></a>
+    </div>
+        <ul class="link-nav">
+            <li><a href="index.html" class="selected">首页</a></li>
+            <li><a href="ToMyLikePage/index.html">投我喜欢</a></li>
+            <li><a href="FinancingPage/index.html">融资之路</a></li>
+            <li><a href="NewbieGuidePage/index.html">新手指南</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" value="找项目">
+        </div>
+
+        <ul class="action-nav">
+            <li><a href="#">登陆</a></li>
+            <li class="btn-join"><a href="#">注册</a></li>
+        </ul>
+        <div id="first-passway">
+            <p>优先认购通道</p>
+        </div>
+</nav>
+
+
+<!--轮播部分-->
+<div class="slide-area">
+    <ul class="slide-pic">
+        <li><a href="#"><img src="HomePage/img/slide1.jpg" alt="" id="slidecontainer"></a></li>
+    </ul>
+    <ul class="slide-txt">
+        <li class="col-sm-3 col-xs-6"><span>19</span>以上线项目</li>
+        <li class="col-sm-3 col-xs-6 right-border2"><span>120355</span>人浏览</li>
+        <li class="col-sm-3 col-xs-6"><span>116,270,960</span>申请金额</li>
+        <li class="col-sm-3 col-xs-6 right-border1"><span>44,270,000</span>以融资额</li>
+    </ul>
+</div>
+<!--视频部分-->
+<div class="video-container">
+    <div class="video">
+        <div class="video-wh kpt">
+            <img src="HomePage/img/img-kpt-intro.jpg" id="kpt-intro">
+            <div class="video-mask"></div>
+        </div>
+        <div class="video-wh risk">
+            <img src="HomePage/img/img-risk-tip.jpg" id="risk-tip">
+            <div class="video-mask"></div>
+        </div>
+    </div>
+</div>
+
+<!--内容部分-->
+<div class="contentcontainer">
+    <!--众筹中-->
+    <div class="ingcontainer">
+        <h3>众筹中</h3>
+        <div class="section-container">
+            <div class="sectionimg">
+                <img src="HomePage/img/ing1.jpeg" alt="">
+                <div class="righttxt">
+                    <p><span>3期众筹</span><br>北京.太阳宫店</p>
+                </div>
+            </div>
+            <div class="sectiontxt">
+                <div class="messgetxt">
+                    <p><strong>仔皇堡</strong>/做有态度的煲仔饭</p>
+                    <span>北京市</span><span>新店众筹</span>
+                </div>
+                <div class="timeshow">
+                    融资倒计时:26天03小时54分34秒
+                </div>
+                <ul class="datashow">
+                    <li><span>163</span>万<br>项目总额</li>
+                    <li><span>3.26</span>万<br>每份总额</li>
+                    <li><span>316</span>万<br>申请金额</li>
+                    <li><span>58</span>人<br>申请认购</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="sectionimg">
+                <img src="HomePage/img/ing2.jpeg" alt="">
+                <div class="righttxt">
+                    <p><span>3期众筹</span><br>北京.太阳宫店</p>
+                </div>
+            </div>
+            <div class="sectiontxt">
+                <div class="messgetxt">
+                    <p><strong>湘阁里辣</strong>/品质源于诚信</p>
+                    <span>广东省</span><span>新店众筹</span>
+                </div>
+                <div class="progressshow">
+
+                </div>
+                <ul class="datashow">
+                    <li><span>163</span>万<br>项目总额</li>
+                    <li><span>3.26</span>万<br>每份总额</li>
+                    <li><span>316</span>万<br>申请金额</li>
+                    <li><span>58</span>人<br>申请认购</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--众筹成功-->
+    <div class="edcontainer">
+        <h3>众筹成功</h3>
+        <div class="sectionshow">
+            <img src="HomePage/img/ed1.jpeg" alt="">
+            <div class="explay">
+                <p><span>谜尚豆捞</span><br>健康养颜金锅汤</p>
+            </div>
+            <p class="adress">四川省</p>
+            <div class="txtcontainer">
+                <p>项目总额<span>231万</span></p>
+                <p>股东<span>36人</span></p>
+            </div>
+        </div>
+        <div class="sectionshow">
+            <img src="HomePage/img/ed1.jpeg" alt="">
+            <div class="explay">
+                <p><span>谜尚豆捞</span><br>健康养颜金锅汤</p>
+            </div>
+            <p class="adress">四川省</p>
+            <div class="txtcontainer">
+                <p>项目总额<span>231万</span></p>
+                <p>股东<span>36人</span></p>
+            </div>
+        </div>
+        <div class="sectionshow">
+            <img src="HomePage/img/ed1.jpeg" alt="">
+            <div class="explay">
+                <p><span>谜尚豆捞</span><br>健康养颜金锅汤</p>
+            </div>
+            <p class="adress">四川省</p>
+            <div class="txtcontainer">
+                <p>项目总额<span>231万</span></p>
+                <p>股东<span>36人</span></p>
+            </div>
+        </div>
+        <div class="sectionshow">
+            <img src="HomePage/img/ed1.jpeg" alt="">
+            <div class="explay">
+                <p><span>谜尚豆捞</span><br>健康养颜金锅汤</p>
+            </div>
+            <p class="adress">四川省</p>
+            <div class="txtcontainer">
+                <p>项目总额<span>231万</span></p>
+                <p>股东<span>36人</span></p>
+            </div>
+        </div>
+        <div class="sectionshow">
+            <img src="HomePage/img/ed1.jpeg" alt="">
+            <div class="explay">
+                <p><span>谜尚豆捞</span><br>健康养颜金锅汤</p>
+            </div>
+            <p class="adress">四川省</p>
+            <div class="txtcontainer">
+                <p>项目总额<span>231万</span></p>
+                <p>股东<span>36人</span></p>
+            </div>
+        </div>
+        <div class="sectionshow">
+            <img src="HomePage/img/ed1.jpeg" alt="">
+            <div class="explay">
+                <p><span>谜尚豆捞</span><br>健康养颜金锅汤</p>
+            </div>
+            <p class="adress">四川省</p>
+            <div class="txtcontainer">
+                <p>项目总额<span>231万</span></p>
+                <p>股东<span>36人</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!--即将上线-->
+    <div class="willcontainer">
+        <h3>即将上线</h3>
+        <div class="showpic">
+            <img src="HomePage/img/will1.jpeg" alt="">
+            <img src="HomePage/img/will2.jpeg" alt="">
+            <img src="HomePage/img/will3.jpeg" alt="">
+            <img src="HomePage/img/will4.jpeg" alt="">
+            <img src="HomePage/img/will5.jpeg" alt="">
+            <img src="HomePage/img/will6.jpeg" alt="">
+            <img src="HomePage/img/will1.jpeg" alt="">
+            <img src="HomePage/img/will2.jpeg" alt="">
+            <img src="HomePage/img/will3.jpeg" alt="">
+            <img src="HomePage/img/will4.jpeg" alt="">
+            <img src="HomePage/img/will5.jpeg" alt="">
+            <img src="HomePage/img/will6.jpeg" alt="">
+        </div>
+    </div>
+    <!--众筹咨讯-->
+    <div class="informationcontainer">
+        <h3>众筹咨讯</h3>
+        <div class="containerbox">
+            <div class="piccontainer">
+                <img src="HomePage/img/ing1.jpeg" alt="">
+                <div class="messagebox">
+                    <div class="txt">
+                        <h4>哇!你居然扫二维码了,你一定有很多问题想问</h4>
+                        <p>
+                            内容内容你居然扫了二维码,你一定有很多问题要问,你居然扫了二维码,你一定有很多问题要问,你居然扫了二维码,
+                            你一定有很多问题要问,你居然扫了二维码,你一定有很多问题要问,内容内容你居然扫了二维码,你一定有很多问题要问,
+                            你居然扫了二维码,你一定有很多问题要问,你居然扫了二维码,你一定有很多问题要问,你居然扫了二维码,你一定有很多问题要问
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <td><a href="#">你居然扫了二维码,你一定有很多问题要问</a></td>
+                    <td class="right">06-30</td>
+                </tr>
+                <tr>
+                    <td><a href="#">你居然扫了二维码,你一定有很多问题要问</a></td>
+                    <td class="right">06-30</td>
+                </tr>
+                <tr>
+                    <td><a href="#">你居然扫了二维码,你一定有很多问题要问</a></td>
+                    <td class="right">06-30</td>
+                </tr>
+                <tr>
+                    <td><a href="#">你居然扫了二维码,你一定有很多问题要问</a></td>
+                    <td class="right">06-30</td>
+                </tr>
+                <tr>
+                    <td><a href="#">你居然扫了二维码,你一定有很多问题要问</a></td>
+                    <td class="right">06-30</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a href="#" class="txtred">查看更多资讯</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!--底部部分-->
+<div class="footer">
+    <div class="sectionleft">
+        <h3>投资靠谱,盈利的餐饮项目</h3>
+        <p>靠谱投为投资人提供优质精益的餐饮项目,并为投资人提供专业的投后管理服务.</p>
+        <a href="#" class="red-a">如何投资?</a>
+        <div class="btnsignbox">
+            <a href="#" class="btnsign">注册</a>
+        </div>
+    </div>
+
+    <div class="sectionright">
+        <h3>投资靠谱,盈利的餐饮项目</h3>
+        <p>靠谱投为投资人提供优质精益的餐饮项目,并为投资人提供专业的投后管理服务.</p>
+        <a href="#" class="red-a">如何众筹?</a>
+        <div class="btnsignbox">
+            <a href="#" class="btnsign">提交申请</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footercontainer">
+        <div class="list-link">
+            <h4>关于我们</h4>
+            <ul>
+                <li><a href="#">靠谱投介绍</a></li>
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">媒体报道</a></li>
+            </ul>
+        </div>
+        <div class="list-link">
+            <h4>帮助中心</h4>
+            <ul>
+                <li><a href="#">新手指南</a></li>
+                <li><a href="#">投资人指南</a></li>
+                <li><a href="#">项目方指南</a></li>
+                <li><a href="#">名词解释</a></li>
+                <li><a href="#">常见问题</a></li>
+            </ul>
+        </div>
+        <div class="list-link">
+            <h4>相关协议</h4>
+            <ul>
+                <li><a href="#">用户服务协议</a></li>
+                <li><a href="#">投资服务协议</a></li>
+                <li><a href="#">风险揭示书</a></li>
+                <li><a href="#">靠谱投业务规则</a></li>
+            </ul>
+        </div>
+        <div class="list-link-l">
+            <h4>联系我们</h4>
+            <p>4000-400-177<span>周一至周六: 9:00 - 12:00</span></p>
+            <a href="#">@靠谱投官方微博</a>
+        </div>
+        <div class="qrcodes">
+            <div class="app">
+                <img src="HomePage/img/qrcode_for_app.png" alt="">
+                <span>靠谱投微信公众号</span>
+            </div>
+            <div class="gzh">
+                <img src="HomePage/img/qrcode_for_gzh.png" alt="">
+                <span>靠谱投微信公众号</span>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="footerbottom">
+        <ul class="link">
+            <li>友情链接</li>
+            <li><a href="#">掌柜攻略</a></li>
+            <li><a href="#">拉勾网</a></li>
+            <li><a href="#">餐饮咖</a></li>
+            <li><a href="#">众筹家</a></li>
+            <li><a href="#">种财网</a></li>
+        </ul>
+        <ul class="firsthidened">
+            <li><a href="#">关于靠谱投</a></li>
+            <li><a href="#">用户服务协议</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">帮助中心</a></li>
+        </ul>
+        <p>©2016 kaoputou.com 靠谱投 京ICP备15039009号</p>
+    </div>
+</footer>
+
+
+<script src="JS/HomePage/main.js"></script>
+</body>
+</html>

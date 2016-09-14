@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/formtable.css">
+</head>
+<body>
+
+<div class="bgcontainer">
+    <div class="container">
+        <img src="img/sectionthree.png" alt="">
+        <div class="formtext">
+            <div class="question">
+                <p class="title">1.品牌信息</p>
+                <form>
+                    <label>
+                        <p>品牌名称*</p>
+                        <input type="text">
+                    </label>
+                    <label>
+                        <p>餐厅类型*</p>
+                        <select>
+                            <option>请选择</option>
+                            <option>海鲜</option>
+                            <option>火锅</option>
+                            <option>烧烤</option>
+                            <option>中餐</option>
+                            <option>西餐</option>
+                            <option>自助餐</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p>直营门店数*</p>
+                        <input type="number">
+                    </label>
+                    <label>
+                        <p class="borderbottom">门店所在城市*</p>
+                        <span>多个城市请用逗号隔开</span>
+                        <textarea></textarea>
+                    </label>
+                </form>
+            </div>
+
+            <div class="question">
+                <p class="title">2.融资计划</p>
+                <span>门店众筹方案</span>
+                <form>
+                    <label>
+                        <p class="borderbottom">融资类型*</p>
+                        <span>新店众筹是为即将新开的单店融资</span><br>
+                        <span>老店众筹是为已经经营一段时间的单店融资</span><br>
+                        <p class="checkcontainer"><input type="radio" name="neworold" class="radio">新店众筹</p>
+                        <p class="checkcontainer"><input type="radio" name="neworold" class="radio">老店众筹</p>
+                    </label>
+                    <label>
+                        <p>计划出让股份*</p>
+                        <select>
+                            <option>请选择</option>
+                            <option>10%以内</option>
+                            <option>10%</option>
+                            <option>20%</option>
+                            <option>30%</option>
+                            <option>40%</option>
+                            <option>50%</option>
+                            <option>60%</option>
+                            <option>70%</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p class="borderbottom">计划融资金额*</p>
+                        <span>注:不包括项目方出资金额</span><br>
+                        <p class="checkcontainer"><input type="radio" name="money" class="radio">100万以内</p>
+                        <p class="checkcontainer"><input type="radio" name="money" class="radio">100-200万</p>
+                        <p class="checkcontainer"><input type="radio" name="money" class="radio">200-300万</p>
+                        <p class="checkcontainer"><input type="radio" name="money" class="radio">300万以上</p>
+                    </label>
+                    <label>
+                        <p class="borderbottom">计划众筹人数*</p>
+                        <p class="checkcontainer"><input type="radio" name="people" class="radio">0-50人</p>
+                        <p class="checkcontainer"><input type="radio" name="people" class="radio">50-100人</p>
+                        <p class="checkcontainer"><input type="radio" name="people" class="radio">100-150人</p>
+                        <p class="checkcontainer"><input type="radio" name="people" class="radio">150-200人</p>
+                    </label>
+                    <label>
+                        <p>计划项目地址</p>
+                        <textarea></textarea>
+                    </label>
+                </form>
+            </div>
+            <div class="question">
+                <p class="title">3.联系人信息</p>
+                <span>请填写真实信息,以便我们跟进处理.</span>
+                <label>
+                    <p>联系人姓名*</p>
+                    <input type="text">
+                </label>
+                <label>
+                    <p>手机*</p>
+                    <input type="number">
+                </label>
+                <label>
+                    <p>E-mail*</p>
+                    <input type="text">
+                </label>
+                <label>
+                    <p class="borderbottom">职位*</p>
+                    <span>例如:创始人/CEO/总经理等</span>
+                    <input type="text">
+                </label>
+            </div>
+            <div class="question">
+                <p class="title">4.其他信息</p>
+                <p>您是从哪里得知靠谱投的？</p>
+                <ul>
+                    <li><input type="radio" name="howknow">朋友圈、微博等社交网络</li>
+                    <li><input type="radio" name="howknow">新闻、媒体</li>
+                    <li><input type="radio" name="howknow">自己搜索</li>
+                    <li><input type="radio" name="howknow">朋友推荐</li>
+                    <li><input type="radio" name="howknow">其他:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></li>
+                </ul>
+                <label>
+                    <p class="borderbottom">您对【股权众筹】的了解程度是？</p>
+                    <span>1颗星代表从来没听说过；10颗星代表非常了解，有自己的见解</span>
+                    <!--<div><img src="img/star.png" alt=""></div>-->
+                </label>
+                <label>
+                    <p>除了靠谱投，您还知道哪些餐饮众筹平台？</p>
+                    <textarea></textarea>
+                </label>
+                <p class="title">提交说明</p>
+                <span>成功提交表单后，如果您的项目符合要求，我们会在7个工作日内联系您</span><br>
+                <span>如果您有任何疑问，欢迎拨打我们的客服电话：4000-400-177</span>
+            </div>
+        </div>
+        <button id="submitbtn">提交</button>
+    </div>
+    <!--<div class="bottomlink"><a href="#"><img src="img/link.png" alt=""></a></div>-->
+</div>
+
+
+
+</body>
+</html>
