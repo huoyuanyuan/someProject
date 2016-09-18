@@ -1,0 +1,11 @@
+<ion-view view-title={{titleList[id].title}}>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="news in newsList" href="#/app/playlist/{{news.id}}" class="item item-avatar">
+        <img src="http://tnfs.tngou.net/img{{news.img}}" alt="预览">
+        <h2>{{news.title}}</h2>
+        <p>{{news.keywords}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
