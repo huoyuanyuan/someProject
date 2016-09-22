@@ -1,0 +1,41 @@
+//
+   Created by mac on 16/9/9.
+
+extends ../adminlayout
+
+block content
+    div(class="article-list-container")
+        h3 文章列表
+        ul(class="article-list")
+            each item in data
+                li
+                    a(id="#{item.AID}" class="article-title") #{item.Title}
+                    input(type='hidden' id='#{item.CID}' class='article-CID')
+                    span #{item.CreateTime}
+    div(class="article-manage-container")
+        div(class="nav")
+            div(class="button btn-editor") 编辑
+            div(class="button btn-delete") 删除
+        div(class="article")
+            h2(class="title")
+            |分类:
+            a(class="categories")
+            input(type="text" class="hidden-id")
+            div(class="article-content")
+
+
+
+        div(class="ueditor-container")
+            form(class="form-submit-addArticle")
+                span 标题:
+                input(type="text",name="title",required="required",id='title')
+                label(for="public-checkBtn") 是否公开:
+                input(type="checkbox",id="public-checkBtn")
+
+                label 文章类别:
+                    select(id="classify-select")
+                        each item in classify
+                            option(value="#{item.CID}") #{item.CName}
+                script(id="editor",type="text/plain",style="width:95%;height:300px;margin:0 auto;")
+                script var ue = UE.getEditor('editor');
+                input(type="submit",value="提交" style='float:right;margin-right:50px;')

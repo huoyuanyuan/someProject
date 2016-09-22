@@ -1,0 +1,138 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    background:beige;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix:before,.clearfix:after{
+    display: table;
+    content: '';
+}
+.clearfix:after{
+    clear: both;
+}
+.header{
+    width:90%;
+    height:50px;
+    background-color:deepskyblue;
+    border-radius: 10px;
+    color:white;
+    font-size: 20px;
+    margin: auto;
+    padding: 20px;
+    line-height: 50px;
+}
+.header-a{
+    font-size: 15px;
+    position:absolute;
+    left:67%;
+
+}
+#header-out{
+    font-size: 15px;
+    position:absolute;
+    left:83%;
+}
+.content{
+    width:90%;
+    margin: auto;
+}
+.column-container{
+    width:17%;
+    height:500px;
+    background-color: gainsboro;
+    margin: .5rem 0 0 0;
+    padding: 2rem 0 0 1rem;
+    border-radius: 2% 2% 0 0 ;
+    float: left;
+}
+.column{
+    width:90%;
+    height:8%;
+    border: 1px solid;
+    margin: 1rem 0 0 -1% ;
+    border-radius: 43%;
+    text-align: center;
+    padding-top: 4%;
+    font-size: 15px;
+    line-height: 35px;
+}
+.showcontent{
+    width:68%;
+    background-color:white;
+    float: left;
+    margin: .5rem 0 0 3.5rem;
+}
+.form-submit-addArticle .title{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.column-container li:hover{
+    color:red;
+}
+.active{
+    color:red;
+}
+label{
+    margin: 10px;
+}
+
+/*文章管理*/
+.article-list{
+
+}
+.article-list li{
+    font-size: 20px;
+    margin-top:20px;
+
+}
+.article-list li span{
+    float: right;
+    font-size: 18px;
+    margin-right: 20px;
+
+}
+
+.article-manage-container{
+    text-align: center;
+    display: none;
+}
+.article-manage-container .hidden-id{
+    visibility: hidden;
+}
+.article-manage-container .article-content{
+    text-align: left;
+}
+.article-manage-container .nav{
+    width: 100%;
+    height: 40px;
+    background-color:gainsboro;
+}
+.article-manage-container .nav:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.article-manage-container .nav .button{
+    width: 60px;
+    height: 28px;
+    color:#696e78;
+    background-color: #d4d5e0;
+    float: right;
+    line-height: 28px;
+    margin: 6px;
+}
+.article-manage-container .nav .button:hover{
+    color:red;
+}
+.ueditor-container{
+    display: none;
+    text-align: left;
+}

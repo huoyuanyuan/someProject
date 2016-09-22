@@ -1,0 +1,51 @@
+extends layout
+
+block content
+    header#header.inner
+        .alignleft
+            h1
+                a(href='/') My Blog
+            h2
+                a(href='/hexo-theme-light/')
+        nav#main-nav.alignright
+            ul
+                li
+                    a(href='/') Home
+                li
+                    a(href='/') Archives
+                li
+                    a(href='/') Page
+                li
+                    a(class="btn-login") Manage
+            .clearfix
+        .clearfix
+
+    #content.inner
+        #main-col.alignleft
+            #wrapper
+
+                block article
+
+        aside#sidebar.alignright
+            .search
+                form(action='', method='get', accept-charset='utf-8')
+                    input(type='text', name='', placeholder='Search')
+                    input(type='hidden', name='', value='')
+            .widget.tag
+                h3.title Tags
+                ul.entry
+                    li
+                        a(href='/') amet
+                        small 2
+                    li
+                        a(href='/') consectetur
+                        small 3
+                    li
+                        a(href='/') dolor
+                        small 4
+        .clearfix
+    footer#footer.inner
+        .alignleft
+            | © 2016 yaz
+        .clearfix
+    script(src="/javascripts/index.js")

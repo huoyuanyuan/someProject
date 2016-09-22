@@ -1,0 +1,23 @@
+//
+   Created by mac on 16/9/7.
+
+extends ../layout
+
+block content
+    div(class='login')
+        div(class="alert-div")
+        form(class="login-form")
+            div
+                span Name
+                br
+                input(class='input' type="text",name="name",required="required")
+            div
+                span Password
+                br
+                input(class='input' type="password",name="password",required="required")
+            div
+                input(class='button' type="submit",value="登陆")
+        p#backtoblog
+            a(href='/') ← Back to MyBlog
+    script(src="/node_modules/js-md5/build/md5.min.js")
+    script(src="/javascripts/login.js")

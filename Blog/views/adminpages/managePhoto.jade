@@ -1,0 +1,13 @@
+//
+   Created by mac on 16/9/9.
+
+extends ../adminlayout
+
+block content
+    h3 这是图片管理页
+    //script.
+    //    console.log(!{JSON.stringify(data)});
+    each item in data
+        //h3= item.title
+        each imgUrl in item.imgUrl
+            img(src=imgUrl)

@@ -1,0 +1,29 @@
+//
+   Created by mac on 16/9/9.
+
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/admin.css')
+        script(src="/node_modules/jquery/dist/jquery.min.js")
+        //UEditor模块
+        script(type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js")
+        script(type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js")
+        script(type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js")
+
+        script(src="/javascripts/admin.js")
+    body
+        div
+            div(class="header") 博客系统管理
+            div(class="content clearfix")
+                div(class="listnav")
+                    ul(class="column-container")
+                        li(name="backhome" class="column") 后台
+                        li(name="addArticle" class="column") 发表文章
+                        li(name="manageArticle" class="column") 文章管理
+                        li(name="managePhoto" class="column") 图片管理
+                        li(name="manageComment" class="column") 评论管理
+                        li(name="lognout" class="column") 登出
+                div(class="showcontent")
+                    block content

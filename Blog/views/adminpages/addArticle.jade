@@ -1,0 +1,20 @@
+//
+   Created by mac on 16/9/8.
+
+extends ../adminlayout
+block content
+
+    form(class="form-submit-addArticle")
+        span(class='title') 标题:
+        input(type="text",name="title",required="required",id='title')
+        label(for="public-checkBtn") 是否公开:
+        input(type="checkbox",id="public-checkBtn")
+        label 文章类别:
+        select(id="classify-select")
+            each item in classify
+                option(value="#{item.CID}") #{item.CName}
+        script(id="editor",type="text/plain",style="width:95%;height:300px;margin:0 auto;")
+        script var ue = UE.getEditor('editor');
+        input(type="submit",value="提交" style='float:right;margin-right:50px;')
+    script(src="/javascripts/UEditor.js")
+

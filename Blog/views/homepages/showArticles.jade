@@ -1,0 +1,20 @@
+extends ../index
+
+block article
+    script.
+        console.log(!{JSON.stringify(data)})
+    each item in data
+        if item.Public == 1
+            article.post
+                .post-content
+                    header
+                        .icon
+                        time(datetime='#{item.CreateTime}')
+                            a(href='/')= item.CreateTime
+                        h1.title
+                            a(href='/')= item.Title
+                    .entry
+                        //放文章内容的位置
+                        div!= item.Content
+                    footer
+                        .clearfix
